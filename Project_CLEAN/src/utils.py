@@ -8,3 +8,4 @@ def add_awgn_noise(signal, snr_db):
     power_noise = power_signal / snr_linear
     noise = np.sqrt(power_noise) * np.random.normal(0, 1, len(signal))
     return signal + noise
+
